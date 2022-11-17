@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+
+{% block styles %} 
+<div class="frame">
+
+            
+    {% for i in range(0,len(file)) %}
+        <button class="custom-btn btn-{{rnd}}" onclick="window.location.href='{{file[i]}}';">{{file[i]}}</button>
+    {% endfor %}
+{% endblock %}
